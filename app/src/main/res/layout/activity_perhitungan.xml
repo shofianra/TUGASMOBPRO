@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:orientation="vertical"
+    tools:context=".Perhitungan">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        //makan
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="30dp">
+
+            <EditText
+                android:id="@+id/namamakan"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:hint="MAKANAN"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/jumlahbeli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="JUMLAH"
+                android:inputType="number"
+                android:text="" />
+
+            <EditText
+                android:layout_width="137dp"
+                android:layout_height="wrap_content"
+                android:hint="HARGA"
+                android:id="@+id/harga"
+                android:inputType="number" />
+        </LinearLayout>
+
+
+        //minum
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/namaminum"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:hint="MINUMAN"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/jumlahbelim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="JUMLAH"
+                android:inputType="number"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/hargam"
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:hint="HARGA"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/tombol1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="PESAN"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total "
+            android:id="@+id/totalbelanja"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginBottom="8dp" />
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/selesai"
+            android:onClick="btnselesai"
+            android:text="SELESAI"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
